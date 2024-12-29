@@ -1,0 +1,205 @@
+/*______---______----______----_____ CSS CODE START ______---______---______---_____*/
+
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Comic Sans MS;
+
+}
+
+.cntnr {
+
+width: 100%;
+min-height: 100vh;
+background: url(img/to_do.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+padding: 10px;
+
+}
+
+
+.todo-app {
+
+width: 100%;
+max-width: 540px;
+background: #e4e2e2ce;
+margin: 100px auto 202px;
+padding: 40px 30px 70px;
+border-radius: 15px;
+box-shadow: 5px 20px 5px rgba(0, 0, 0, 0.5);
+ 
+}
+
+
+.todo-app h2 {
+
+font-family: Comic Sans MS;
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+
+}
+
+
+.todo-app h2 span {
+
+width: 30px;
+margin-left: 10px;
+
+}
+
+
+.row {
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: #fbfcff;
+border-radius: 30px;
+padding-left: 20px;
+margin-bottom: 25px;
+
+} 
+
+
+input {
+
+flex: 1;
+border: none;
+outline: none;
+background: transparent;
+padding: 15px;
+font-family: Comic Sans MS;
+font-size: 20px;
+text-transform: capitalize;
+color: #2c3e50;
+
+}
+
+
+input::placeholder {
+
+font-size: 20px;
+color: #b3b3b3ad;
+font-family: Comic Sans MS;
+
+}
+
+
+button {
+
+border: none;
+outline: none;
+padding: 16px 50px;
+background: #ffc9c9;
+color: #ffff;
+font-weight: 800;
+font-family: Comic Sans MS;
+font-size: 25px;
+border-radius: 30px;
+transition: 0.3s;
+
+}
+
+
+button:hover {
+
+background: #ffb4b4;
+
+}
+
+
+button:active {
+
+  background: #ff8c8c;
+
+}
+
+
+ul li {
+
+list-style: none;
+font-size: 19px;
+padding: 12px 8px 12px 50px;
+user-select: none;
+cursor: pointer;
+position: relative;
+
+}
+
+
+ul li::before {
+
+content: '';
+position: absolute;
+height: 28px;
+width: 28px;
+border-radius: 50%;
+background: url(img/round.png);
+background-size: cover;
+background-position: center;
+top: 12px;
+left: 8px;
+
+}
+
+
+ul li.checked {
+
+color: #192a569c;
+text-decoration: line-through;
+
+}
+
+
+ul li.checked::before {
+
+background: url(img/delete.png);
+background-size: cover;
+background-position: center;
+
+}
+
+
+ul li span {
+
+position: absolute;
+right: 0;
+top: 5px;
+width: 15px;
+height: 15px;
+font-size: 22px;
+color: #555;
+line-height: 40px;
+text-align: center;
+background: url(img/u007d.png);
+background-size: cover;
+transition: 0.1s;
+
+}
+
+
+ul li span:hover {
+
+background: url(img/close.png);
+background-size: cover;
+
+}
+
+
+ul li span:active {
+
+background: url(img/cancel.png);
+background-size: cover;
+
+}
+
+
+
+
+
+
+/* ______---______----______----_____CSS CODE END______---______----______----_____ */
